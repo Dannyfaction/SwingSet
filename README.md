@@ -1,2 +1,0 @@
-# SwingSet
-Mediacollege School Project
