@@ -13,6 +13,6 @@ public class FollowZAxis : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Debug.Log(pointController.HipCenter.transform.position.z*1.5f-0.5f);
-		transform.position = new Vector3 (transform.position.x,transform.position.y,pointController.HipCenter.transform.position.z*1.5f-0.5f);
+		transform.position = new Vector3 (transform.position.x,transform.position.y,pointController.HipCenter.transform.position.z*1.25f-0.5f);
 	}
 }

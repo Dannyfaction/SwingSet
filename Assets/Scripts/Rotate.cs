@@ -15,7 +15,7 @@ public class Rotate : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        timer = 5f;
+        timer = 3f;
 	}
 	
 	// Update is called once per frame
@@ -29,10 +29,13 @@ public class Rotate : MonoBehaviour {
         {
             timer -= Time.deltaTime;
         }
-        Debug.Log(rotation.eulerAngles.z);
-        if (rotation.eulerAngles.z > 90f && !isSpawning) {
+        //Debug.Log(rotation.eulerAngles.z);
+        if (rotation.eulerAngles.z > 45f && !isSpawning) {
             isSpawning = true;
-            //OnSpawnEvent();
+            if (OnSpawnEvent != null)
+            {
+                OnSpawnEvent();
+            }
         }
     }
 }
